@@ -1,0 +1,117 @@
+.section-logo{
+    padding: 2.5rem 0; //
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background-color:$bg-primary ;
+    width: 100%;
+    @include respond(sp){
+        padding: 1.7125rem 0.075rem;
+        position: fixed;
+        top: 0;
+        z-index: 20;
+    }
+    &__img{
+        @include respond(sp){
+            width: 185px;
+        }
+    }
+}
+.section-bg{
+    @include respond(sp){
+        margin-top: 7rem;
+    }
+}   
+.section-menu{
+    margin: 0 auto;
+    margin-top: 1.2rem;
+    padding: 2.3rem 0;
+    background-color: white;
+    @include respond(sp){
+        margin: 0;
+        padding: 0;
+    }
+}
+.section-news{
+    padding: 2.65rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__content{
+        margin-top: 3rem;
+        padding: 0 16rem;
+        padding-right: 15rem;
+        @include respond(sp){
+            padding: 0;
+        }
+    }
+    
+    @include respond(sp){
+        padding: 0 0 3rem 0;
+        margin-top: 5.5rem;
+    }
+    @include respond(big-pc){
+        margin-top: 1rem;
+    }
+}
+
+.section-features{
+    padding-top: 9.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include respond(sp){
+        padding-top: 2rem;
+    }
+    @include respond(big-pc){
+        padding-top: 12rem;
+    }
+}
+
+.section-subscription{
+    padding-top: 10rem;
+    @include respond(sp){
+        padding-top: 10rem;
+    }
+}
+.section-items{
+    padding: 11rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include respond(sp){
+        padding: 7rem 0 0 0;
+    }
+    @include respond(big-pc){
+        padding: 12.2rem 0 0 0;
+    }
+}
+
+.section-copyright{
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+
+    padding: 0.5rem 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.425rem;
+    font-weight: 500;
+    &--title{
+        @include respond(sp){
+            padding: 2rem 1rem;
+            font-size: 1.2rem;
+        }
+        @include respond(big-pc){
+            padding-top: 1rem;
+        }
+    }
+    @include respond(sp){
+        font-size: 1.28rem;
+        font-weight: 600;
+        color:$color-text-nav;
+    }
+}
